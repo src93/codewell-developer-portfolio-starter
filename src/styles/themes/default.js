@@ -1,6 +1,7 @@
 export const options = {
   fonts: {
-
+    headings: `'Prata', serif`,
+    body: `'Prata', serif`
   },
   colors: {
     backgroundColorBlack: '#0A0A0B',

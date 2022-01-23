@@ -20,3 +20,11 @@ export const ContainerImage = styled.div`
     `;
   }}
 `;
+
+export const Paragraph = styled.p`
+  ${props => {
+    return `
+      font-family: ${props.theme.fonts.body};
+    `;
+  }}
+`;

@@ -38,7 +38,8 @@ export const Link = styled.li`
 
   ${props => {
     return `
-      color: ${props.theme.colors.fontColorDescription1}
+      color: ${props.theme.colors.fontColorDescription1};
+      font-family: ${props.theme.fonts.headings};
     `
   }}
 `;
@@ -64,6 +65,7 @@ export const HeaderThree = styled.h3`
   ${props => {
     return `
       color: ${props.theme.colors.fontColorHeaders};
+      font-family: ${props.theme.fonts.headings};
     `;
   }}
 `;
