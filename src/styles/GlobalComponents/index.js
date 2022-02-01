@@ -10,13 +10,21 @@ export const Button = styled.button`
 
 export const Image = styled.img`
   width: 100%;
-  height: auto;
+
+  ${props => {
+    return `
+      width: ${props.width};
+      height: ${props.fullHeight ? '100%' : 'auto'};
+      object-fit: ${props.contain ? 'contain' : 'initial'};
+    `;
+  }}
 `;
 
 export const ContainerImage = styled.div`
   ${props => {
     return `
       width: ${props.width};
+      height: ${props.height || '100%'};
     `;
   }}
 `;
@@ -25,6 +33,16 @@ export const Paragraph = styled.p`
   ${props => {
     return `
       font-family: ${props.theme.fonts.body};
+    `;
+  }}
+`;
+
+export const Title = styled.h2`
+  margin: 0;
+  ${props => {
+    return `
+      color: ${props.theme.colors.fontColorHeaders};
+      font-family: ${props.theme.fonts.headings};
     `;
   }}
 `;

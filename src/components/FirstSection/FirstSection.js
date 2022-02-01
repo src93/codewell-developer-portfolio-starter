@@ -5,7 +5,8 @@ import {
   Image,
   ListImages,
   CustomParagraph,
-  Section
+  Section,
+  Item
 } from './FirstSectionStyles';
 
 import Morgan from 'resources/images/Logos/Morgan.svg';
@@ -21,36 +22,36 @@ export const FirstSection = () => {
       <Title>Helpding companies build better, scalable software</Title>
       <CustomParagraph>Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook and more.</CustomParagraph>
       <ListImages>
-        <li>
-          <ContainerImage width={'5rem'}>
+        <Item>
+          <ContainerImage width={'6rem'}>
+            <Image src={Walmart} alt='Walmart' />
+          </ContainerImage>
+        </Item>
+        <Item>
+          <ContainerImage width={'7rem'}>
             <Image src={Morgan} alt='Morgan' />
           </ContainerImage>
-        </li>
-        <li>
-          <ContainerImage width={'5rem'}>
-            <Image src={Samsung} alt='Samsung' />
+        </Item>
+        <Item>
+          <ContainerImage width={'4rem'}>
+            <Image src={Visa} alt='Visa' />
           </ContainerImage>
-        </li>
-        <li>
+        </Item>
+        <Item>
           <ContainerImage width={'5rem'}>
             <Image src={Tinder} alt='Tinder' />
           </ContainerImage>
-        </li>
-        <li>
-          <ContainerImage width={'5rem'}>
+        </Item>
+        <Item>
+          <ContainerImage width={'9rem'}>
+            <Image src={Samsung} alt='Samsung' />
+          </ContainerImage>
+        </Item>
+        <Item>
+          <ContainerImage width={'6rem'}>
             <Image src={Verizon} alt='Verizon' />
           </ContainerImage>
-        </li>
-        <li>
-          <ContainerImage width={'5rem'}>
-            <Image src={Visa} alt='Visa' />
-          </ContainerImage>
-        </li>
-        <li>
-          <ContainerImage width={'5rem'}>
-            <Image src={Walmart} alt='Walmart' />
-          </ContainerImage>
-        </li>
+        </Item>
       </ListImages>
     </Section>
   );

@@ -9,6 +9,7 @@ export const HeaderStyled = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 0;
 
   ${props => {
     return `
