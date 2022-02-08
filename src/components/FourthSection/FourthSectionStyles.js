@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import {
   Paragraph,
   Title,
-  Button
+  Button,
+  MaxLimit
 } from 'styles/GlobalComponents/index';
 
 export const Section = styled.section`
   display: flex;
-  flex-direction: column;
-  padding: 3rem 0;
+  justify-content: center;
 
   ${props => {
     return `
@@ -16,6 +16,12 @@ export const Section = styled.section`
       padding: ${props.theme.paddings.sections};
     `;
   }}
+`;
+
+export const CustomMaxLimit = styled(MaxLimit)`
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
 `;
 
 export const CustomParagraph = styled(Paragraph)`

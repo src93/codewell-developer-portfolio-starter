@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 import {
   Paragraph,
-  Title
+  Title,
+  MaxLimit
 } from 'styles/GlobalComponents/index';
 
 export const Section = styled.section`
   display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
-  align-items: center;
+  justify-content: center;
 
   ${props => {
     return `
@@ -16,10 +15,17 @@ export const Section = styled.section`
       padding: ${props.theme.paddings.sections};
     `;
   }}
+`;
+
+export const CustomMaxLimit = styled(MaxLimit)`
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
 
   @media ${props => props.theme.breakpoints.lg} {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 `;
 

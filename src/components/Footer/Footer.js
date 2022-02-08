@@ -7,24 +7,27 @@ import {
   ContainerImage,
   FooterStyled,
   CustomParagraph,
-  Image
+  Image,
+  CustomMaxLimit
 } from './FooterStyles';
 
 export const Footer = () => {
   return (
     <FooterStyled>
-      <CustomParagraph>Johnathan Speeter</CustomParagraph>
-      <ContainerIcons>
-        <ContainerImage>
-          <Image src={Github} alt='Github' />
-        </ContainerImage>
-        <ContainerImage>
-          <Image src={LinkedIn} alt='LinkedIn' />
-        </ContainerImage>
-        <ContainerImage>
-          <Image src={Twitter} alt='Twitter' />
-        </ContainerImage>
-      </ContainerIcons>
+      <CustomMaxLimit>
+        <CustomParagraph>Johnathan Speeter</CustomParagraph>
+        <ContainerIcons>
+          <ContainerImage>
+            <Image src={Github} alt='Github' />
+          </ContainerImage>
+          <ContainerImage>
+            <Image src={LinkedIn} alt='LinkedIn' />
+          </ContainerImage>
+          <ContainerImage>
+            <Image src={Twitter} alt='Twitter' />
+          </ContainerImage>
+        </ContainerIcons>
+      </CustomMaxLimit>
     </FooterStyled>
   );
 }

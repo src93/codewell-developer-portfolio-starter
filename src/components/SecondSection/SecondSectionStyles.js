@@ -3,12 +3,13 @@ import {
   ContainerImage,
   Image,
   Paragraph,
-  Title
+  Title,
+  MaxLimit
 } from 'styles/GlobalComponents/index';
 
 export const Section = styled.section`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 
   ${props => {
     return `
@@ -16,10 +17,15 @@ export const Section = styled.section`
       padding: ${props.theme.paddings.sections};
     `;
   }}
+`;
+
+export const CustomMaxLimit = styled(MaxLimit)`
+  display: flex;
+  flex-direction: column;
 
   @media ${props => props.theme.breakpoints.lg} {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 `;
 

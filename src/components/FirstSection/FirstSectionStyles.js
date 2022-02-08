@@ -3,10 +3,14 @@ import {
   ContainerImage,
   Image,
   Paragraph,
-  Title
+  Title,
+  MaxLimit
 } from 'styles/GlobalComponents/index';
 
 export const Section = styled.section`
+  display: flex;
+  justify-content: center;
+
   ${props => {
     return `
       background-color: ${props.theme.colors.backgroundColorBlack};
@@ -115,5 +119,6 @@ export const CustomParagraph = styled(Paragraph)`
 export {
   ContainerImage,
   Image,
-  Title
+  Title,
+  MaxLimit
 }

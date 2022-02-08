@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import {
   Paragraph,
   ContainerImage,
-  Image
+  Image,
+  MaxLimit
 } from 'styles/GlobalComponents/index';
 
 export const FooterStyled = styled.footer`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 
   ${props => {
     return `
@@ -16,6 +16,12 @@ export const FooterStyled = styled.footer`
       padding: ${props.theme.paddings.sections};
     `;
   }}
+`;
+
+export const CustomMaxLimit = styled(MaxLimit)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const ContainerIcons = styled.div`
@@ -26,7 +32,7 @@ export const ContainerIcons = styled.div`
 
 export const CustomParagraph = styled(Paragraph)`
   font-size: 1.5rem;
-  
+
   ${props => {
     return `
       color: ${props.theme.colors.fontColorHeaders};

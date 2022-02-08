@@ -47,3 +47,7 @@ export const Title = styled.h2`
     `;
   }}
 `;
+
+export const MaxLimit = styled.div`
+  width: 100rem;
+`;

@@ -2,14 +2,13 @@ import styled from 'styled-components';
 import {
   Button,
   ContainerImage,
-  Image
+  Image,
+  MaxLimit
 } from 'styles/GlobalComponents/index';
 
 export const HeaderStyled = styled.header`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 0;
+  justify-content: center;
 
   ${props => {
     return `
@@ -17,6 +16,13 @@ export const HeaderStyled = styled.header`
       padding: ${props.theme.paddings.sections};
     `;
   }}
+`;
+
+export const CustomMaxLimit = styled(MaxLimit)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0;
 `;
 
 export const Nav = styled.nav`

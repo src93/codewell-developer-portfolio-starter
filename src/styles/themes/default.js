@@ -16,6 +16,6 @@ export const options = {
   breakpoints: {
     sm: 'screen and (min-width: 640px)',
     md: 'screen and (min-width: 768px)',
-    lg: 'screen and (min-width: 1280px)'
+    lg: 'screen and (min-width: 1550px)'
   }
 }

@@ -6,7 +6,8 @@ import {
   ListImages,
   CustomParagraph,
   Section,
-  Item
+  Item,
+  MaxLimit
 } from './FirstSectionStyles';
 
 import Morgan from 'resources/images/Logos/Morgan.svg';
@@ -19,40 +20,42 @@ import Walmart from 'resources/images/Logos/Walmart.svg';
 export const FirstSection = () => {
   return (
     <Section>
-      <Title>Helpding companies build better, scalable software</Title>
-      <CustomParagraph>Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook and more.</CustomParagraph>
-      <ListImages>
-        <Item>
-          <ContainerImage width={'6rem'}>
-            <Image src={Walmart} alt='Walmart' />
-          </ContainerImage>
-        </Item>
-        <Item>
-          <ContainerImage width={'7rem'}>
-            <Image src={Morgan} alt='Morgan' />
-          </ContainerImage>
-        </Item>
-        <Item>
-          <ContainerImage width={'4rem'}>
-            <Image src={Visa} alt='Visa' />
-          </ContainerImage>
-        </Item>
-        <Item>
-          <ContainerImage width={'5rem'}>
-            <Image src={Tinder} alt='Tinder' />
-          </ContainerImage>
-        </Item>
-        <Item>
-          <ContainerImage width={'9rem'}>
-            <Image src={Samsung} alt='Samsung' />
-          </ContainerImage>
-        </Item>
-        <Item>
-          <ContainerImage width={'6rem'}>
-            <Image src={Verizon} alt='Verizon' />
-          </ContainerImage>
-        </Item>
-      </ListImages>
+      <MaxLimit>
+        <Title>Helpding companies build better, scalable software</Title>
+        <CustomParagraph>Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook and more.</CustomParagraph>
+        <ListImages>
+          <Item>
+            <ContainerImage width={'6rem'}>
+              <Image src={Walmart} alt='Walmart' />
+            </ContainerImage>
+          </Item>
+          <Item>
+            <ContainerImage width={'7rem'}>
+              <Image src={Morgan} alt='Morgan' />
+            </ContainerImage>
+          </Item>
+          <Item>
+            <ContainerImage width={'4rem'}>
+              <Image src={Visa} alt='Visa' />
+            </ContainerImage>
+          </Item>
+          <Item>
+            <ContainerImage width={'5rem'}>
+              <Image src={Tinder} alt='Tinder' />
+            </ContainerImage>
+          </Item>
+          <Item>
+            <ContainerImage width={'9rem'}>
+              <Image src={Samsung} alt='Samsung' />
+            </ContainerImage>
+          </Item>
+          <Item>
+            <ContainerImage width={'6rem'}>
+              <Image src={Verizon} alt='Verizon' />
+            </ContainerImage>
+          </Item>
+        </ListImages>
+      </MaxLimit>
     </Section>
   );
 }
