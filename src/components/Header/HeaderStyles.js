@@ -14,6 +14,7 @@ export const HeaderStyled = styled.header`
   ${props => {
     return `
       background-color: ${props.theme.colors.backgroundColorBlack};
+      padding: ${props.theme.paddings.sections};
     `;
   }}
 `;

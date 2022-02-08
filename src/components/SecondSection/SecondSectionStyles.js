@@ -13,6 +13,7 @@ export const Section = styled.section`
   ${props => {
     return `
       background-color: ${props.theme.colors.backgroundColorBlack};
+      padding: ${props.theme.paddings.sections};
     `;
   }}
 
@@ -51,7 +52,14 @@ export const ContainerDescription = styled.div`
   margin: 0 auto;
 `;
 
+export const CustomContainerImage = styled(ContainerImage)`
+  max-height: 378px;
+
+  @media ${props => props.theme.breakpoints.md} {
+    height: 378px;
+  }
+`;
+
 export {
-  ContainerImage,
-  Image
+  Image,
 };

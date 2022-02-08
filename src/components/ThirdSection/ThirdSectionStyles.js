@@ -13,6 +13,7 @@ export const Section = styled.section`
   ${props => {
     return `
       background-color: ${props.theme.colors.backgroundColorGrey};
+      padding: ${props.theme.paddings.sections};
     `;
   }}
 

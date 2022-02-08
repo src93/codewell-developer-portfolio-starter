@@ -10,6 +10,7 @@ export const Section = styled.section`
   ${props => {
     return `
       background-color: ${props.theme.colors.backgroundColorBlack};
+      padding: ${props.theme.paddings.sections};
     `;
   }}
 `;

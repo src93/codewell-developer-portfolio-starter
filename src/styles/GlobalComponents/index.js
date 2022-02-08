@@ -6,6 +6,7 @@ export const Button = styled.button`
   width: 10rem;
   height: 2rem;
   color: #100E05;
+  cursor: pointer;
 `;
 
 export const Image = styled.img`

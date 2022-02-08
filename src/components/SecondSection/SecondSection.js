@@ -5,7 +5,7 @@ import YelpCamp from 'resources/images/YelpCamp.png';
 import {
   Section,
   Article,
-  ContainerImage,
+  CustomContainerImage,
   Image,
   CustomParagraph,
   ContentTitle,
@@ -17,9 +17,9 @@ export const SecondSection = () => {
   return (
     <Section>
       <Article>
-        <ContainerImage height={'378px'}>
+        <CustomContainerImage>
           <Image src={Spense} alt='spense' fullHeight contain />
-        </ContainerImage>
+        </CustomContainerImage>
         <ContainerDescription>
           <ContentTitle>
             <CustomTitle>Spense.com</CustomTitle>
@@ -29,9 +29,9 @@ export const SecondSection = () => {
         </ContainerDescription>
       </Article>
       <Article>
-        <ContainerImage height={'378px'}>
+        <CustomContainerImage>
           <Image src={YelpCamp} alt='yelpcamp' fullHeight contain/>
-        </ContainerImage>
+        </CustomContainerImage>
         <ContainerDescription>
           <ContentTitle>
             <CustomTitle>YelpCamp.com</CustomTitle>

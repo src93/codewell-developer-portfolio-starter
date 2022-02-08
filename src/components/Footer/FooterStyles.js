@@ -13,18 +13,23 @@ export const FooterStyled = styled.footer`
   ${props => {
     return `
       background-color: ${props.theme.colors.backgroundColorGrey};
+      padding: ${props.theme.paddings.sections};
     `;
   }}
 `;
 
 export const ContainerIcons = styled.div`
   display: flex;
+  justify-content: space-between;
+  width: 6rem;
 `;
 
 export const CustomParagraph = styled(Paragraph)`
+  font-size: 1.5rem;
+  
   ${props => {
     return `
-      color: ${props.theme.colors.fontColorDescription1};
+      color: ${props.theme.colors.fontColorHeaders};
     `
   }}
 `;
